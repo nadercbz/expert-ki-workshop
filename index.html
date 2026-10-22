@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EXPERT KI WORKSHOP · Berlin · Nader Ait-Laouad</title>
+  <meta name="description" content="Exklusiver KI Workshop in Berlin. Vier Sonntage, je 3,5 Stunden, max. 10 Plätze. Du baust dir mit Claude Code einen eigenen KI Agenten, Automationen und dein eigenes KI Dashboard.">
+  <meta name="theme-color" content="#dfe7ee">
+  <meta property="og:title" content="EXPERT KI WORKSHOP · Berlin">
+  <meta property="og:description" content="Vier Sonntage. Ein eigener KI Agent, der dich kennt und für dich arbeitet. Max. 10 Plätze.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://nadercbz.github.io/expert-ki-workshop/assets/img/og.jpg">
+  <link rel="canonical" href="https://nadercbz.github.io/expert-ki-workshop/">
+  <meta property="og:url" content="https://nadercbz.github.io/expert-ki-workshop/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/outfit-latin.woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/img/bg-desktop.webp" media="(min-width: 700px)">
+  <link rel="preload" as="image" href="assets/img/bg-mobile.webp" media="(max-width: 699px)">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- Feste Bühne: Nebel, Riesenschrift, Roboter, Korn -->
+  <div class="stage" aria-hidden="true">
+    <div class="bg"></div>
+    <div class="hero-word"><span>EXPERT</span><span>KI</span><span>WORKSHOP</span></div>
+    <div class="robot-wrap" id="robotWrap">
+      <div class="robot-halo"></div>
+      <picture>
+        <source media="(max-aspect-ratio: 4/5)" srcset="assets/img/robot-poster-mobile.webp">
+        <img class="robot-poster" src="assets/img/robot-poster.webp" alt="">
+      </picture>
+      <div class="robot-frame"><canvas id="robot"></canvas></div>
+    </div>
+    <div class="fog-front"></div>
+    <div class="grain"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" data-scroll>
+      <span class="brand-icon"><i></i><i></i></span>
+      <span class="brand-name">EXPERT <b>KI</b> WORKSHOP</span>
+    </a>
+    <nav class="nav-links glass glass--pill" aria-label="Abschnitte">
+      <a href="#ergebnis" data-scroll>Ergebnis</a>
+      <a href="#akte" data-scroll>Vier Akte</a>
+      <a href="#park" data-scroll>Park Session</a>
+      <a href="#beweise" data-scroll>Beweise</a>
+      <a href="#referenzen" data-scroll>Referenzen</a>
+    </nav>
+    <a class="btn btn--dark nav-cta" href="#anfragen" data-scroll>Platz anfragen</a>
+  </header>
+
+  <main id="top">
+
+    <!-- 1 · HERO -->
+    <section class="hero">
+      <article class="glass glass--light w w-next tilt" data-depth="1">
+        <header class="w-head"><span>Nächste Session</span><em>15.11.</em></header>
+        <div class="w-orb">
+          <div class="orb glass glass--orb">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 20.5 8.5 11l5 5.2L16 8l2.5 8.2 5-5.2 2.5 9.5Z" fill="currentColor"/><rect x="7" y="23" width="18" height="2.4" rx="1.2" fill="currentColor"/></svg>
+            <span>AKT 1</span>
+          </div>
+        </div>
+        <footer class="w-foot">Park Session</footer>
+      </article>
+
+      <article class="glass glass--dark w w-stats tilt" data-depth="1.4">
+        <header class="w-head"><span>Workshop</span><em>4 Akte</em></header>
+        <div class="w-big"><b>14</b><small>STD LIVE</small></div>
+        <div class="w-slider" aria-hidden="true">
+          <div class="w-track"><i class="w-fill"></i><i class="w-dots"></i><i class="w-thumb"></i></div>
+          <div class="w-scale"><span>Akt 1</span><span>Akt 4</span></div>
+        </div>
+      </article>
+
+      <div class="hero-bottom">
+        <div class="hero-copy">
+          <div class="chips">
+            <span class="chip glass glass--pill"><span class="chip-long">Exklusiv in Berlin ·&nbsp;</span>4 Sonntage · max. 10 Plätze</span>
+            <a class="chip chip--eb" href="#anfragen" data-scroll>Early Bird bis 04.11.</a>
+          </div>
+          <h1>Dein eigener KI Agent.<br><span class="thin">In vier Sonntagen.</span></h1>
+          <p>Ein Agent, der dich kennt, in deiner Stimme schreibt und für dich arbeitet. Ein Leben lang. Gebaut mit Claude Code, Schritt für Schritt, mit Nader.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn--dark btn--lg" href="#anfragen" data-scroll>Platz anfragen</a>
+          <a class="btn btn--glass btn--lg" href="#akte" data-scroll>Die vier Akte</a>
+          <span class="scroll-hint"><i></i>Scrollen</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ERGEBNIS -->
+    <section class="outcome" id="ergebnis">
+      <div class="sec-head">
+        <span class="eyebrow">Was du am Ende hast</span>
+        <h2>Kein Wissen zum Abheften.<br><span class="thin">Ein System, das läuft.</span></h2>
+        <p>Du schaust nicht zu. Du baust. An vier Sonntagen entsteht dein eigenes Setup, und du gehst mit einem Agenten nach Hause, der ab dem ersten Tag Arbeit abnimmt.</p>
+      </div>
+
+      <div class="grid">
+        <div class="cell"><article class="glass glass--light w card-w">
+          <header class="w-head"><span>Dein Agent</span><em class="live">online</em></header>
+          <div class="w-orb"><div class="orb glass glass--orb"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="9" width="18" height="13" rx="6" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="12" y="13" width="2.2" height="5" rx="1.1" fill="currentColor"/><rect x="17.8" y="13" width="2.2" height="5" rx="1.1" fill="currentColor"/></svg><span>SOUL</span></div></div>
+          <footer class="w-foot">kennt deine Stimme</footer>
+        </article></div>
+
+        <div class="cell"><article class="glass glass--dark w card-w">
+          <header class="w-head"><span>Automationen</span><em>Tag und Nacht</em></header>
+          <div class="w-big"><b>24/7</b></div>
+          <footer class="w-foot left">Briefing jeden Morgen, Wochenbericht jeden Freitag</footer>
+        </article></div>
+
+        <div class="cell"><article class="glass glass--light w card-w">
+          <header class="w-head"><span>Steuer</span><em>vorbereitet</em></header>
+          <ol class="steps"><li>Belege</li><li>EÜR</li><li>Mappe</li></ol>
+          <div class="bar"><i></i></div>
+          <footer class="w-foot left">fertig für deinen Steuerberater</footer>
+        </article></div>
+
+        <div class="cell"><article class="glass glass--dark w card-w">
+          <header class="w-head"><span>E Mails</span><em>sortiert</em></header>
+          <ul class="mail"><li><i></i>Angebot Entwurf<b>bereit</b></li><li><i></i>Rechnung erinnert<b>bereit</b></li><li><i></i>Newsletter<b>archiv</b></li></ul>
+          <footer class="w-foot left">Senden bleibt deine Entscheidung</footer>
+        </article></div>
+
+        <div class="cell"><article class="glass glass--light w card-w">
+          <header class="w-head"><span>Skills</span><em>eigene</em></header>
+          <div class="w-big"><b>3+</b><small>DEIN STIL</small></div>
+          <footer class="w-foot left">Angebote, Texte, Recherche. So wie du es machst.</footer>
+        </article></div>
+
+        <div class="cell"><article class="glass glass--dark w card-w">
+          <header class="w-head"><span>Dashboard</span><em>deins</em></header>
+          <div class="mini-dash"><i></i><i></i><i class="bot"></i><i></i><i></i></div>
+          <footer class="w-foot left">Roboter in der Mitte, alles auf einen Blick</footer>
+        </article></div>
+      </div>
+    </section>
+
+    <!-- 3 · VIER AKTE -->
+    <section class="acts" id="akte">
+      <div class="acts-pin">
+        <div class="sec-head acts-head">
+          <span class="eyebrow">Vier Sonntage · je 3,5 Stunden · 11:00 bis 14:30</span>
+          <h2>Gebaut wie ein Film.<br><span class="thin">In vier Akten.</span></h2>
+        </div>
+        <div class="acts-track">
+
+          <article class="act glass glass--light">
+            <figure class="act-img"><img src="assets/img/akt1.webp" srcset="assets/img/akt1-s.webp 600w, assets/img/akt1.webp 1000w" sizes="(max-width: 899px) 90vw, 420px" alt="Kleine Gruppe sitzt im nebligen Park, eine Person wird mit Mikrofon interviewt" loading="lazy"></figure>
+            <div class="act-body">
+              <header class="act-meta"><span>Akt 1</span><em>So 15.11.</em></header>
+              <h3>Fundament und Identität</h3>
+              <p class="act-line">Dein Agent lernt, wer du bist.</p>
+              <ul><li>Claude Code einrichten</li><li>Eine Stunde Park Session mit Aufnahme</li><li>Soul Profil aus deiner eigenen Stimme</li></ul>
+              <p class="hw"><b>Hausaufgabe</b> 7 Abende Sprachnotiz, 20 Aufgaben zum Abgeben</p>
+            </div>
+          </article>
+
+          <article class="act glass glass--light">
+            <figure class="act-img"><img src="assets/img/akt2.webp" srcset="assets/img/akt2-s.webp 600w, assets/img/akt2.webp 1000w" sizes="(max-width: 899px) 90vw, 420px" alt="Person arbeitet konzentriert am Laptop, in Bewegung verschwommen" loading="lazy"></figure>
+            <div class="act-body">
+              <header class="act-meta"><span>Akt 2</span><em>So 22.11.</em></header>
+              <h3>Skills und Agenten Team</h3>
+              <p class="act-line">Aus einem Assistenten wird ein Team.</p>
+              <ul><li>Eigene Skills bauen</li><li>Agenten Team mit festen Rollen</li><li>Gedächtnis, das bleibt</li></ul>
+              <p class="hw"><b>Hausaufgabe</b> Jeden Tag eine echte Aufgabe abgeben</p>
+            </div>
+          </article>
+
+          <article class="act glass glass--light">
+            <figure class="act-img"><img src="assets/img/akt3.webp" srcset="assets/img/akt3-s.webp 600w, assets/img/akt3.webp 1000w" sizes="(max-width: 899px) 90vw, 420px" alt="Hände sortieren Belege, Papiere wirbeln durch die Luft" loading="lazy"></figure>
+            <div class="act-body">
+              <header class="act-meta"><span>Akt 3</span><em>So 29.11.</em></header>
+              <h3>Automationen im echten Leben</h3>
+              <p class="act-line">Dein Agent arbeitet, während du schläfst.</p>
+              <ul><li>E Mails sortieren und vorschreiben</li><li>Vorbereitende Steuererklärung</li><li>Prozesse deiner Selbstständigkeit</li><li>Aufgaben, die von selbst starten</li></ul>
+              <p class="hw"><b>Hausaufgabe</b> Eine Woche laufen lassen, Fehler sammeln</p>
+            </div>
+          </article>
+
+          <article class="act glass glass--light">
+            <figure class="act-img"><img src="assets/img/akt4.webp" srcset="assets/img/akt4-s.webp 600w, assets/img/akt4.webp 1000w" sizes="(max-width: 899px) 90vw, 420px" alt="Silhouette vor einer leuchtenden Glaswand" loading="lazy"></figure>
+            <div class="act-body">
+              <header class="act-meta"><span>Akt 4</span><em>So 06.12.</em></header>
+              <h3>Dashboard und Launch</h3>
+              <p class="act-line">Du siehst dein System.</p>
+              <ul><li>Dein eigenes KI Dashboard mit Roboter</li><li>Ausblick: Kanäle, die sich selbst bespielen</li><li>Dein 90 Tage Plan</li></ul>
+              <p class="hw"><b>Finale</b> Präsentation, Zertifikat, Alumni Gruppe</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · PARK SESSION -->
+    <section class="park" id="park">
+      <div class="park-frame">
+        <img class="park-img" src="assets/img/akt1-l.webp" srcset="assets/img/akt1-s.webp 600w, assets/img/akt1.webp 1000w, assets/img/akt1-l.webp 1800w" sizes="(max-width: 899px) 100vw, 1320px" alt="" loading="lazy">
+        <div class="park-shade"></div>
+        <div class="park-copy">
+          <span class="eyebrow light">Akt 1 · Park Session</span>
+          <h2>Es beginnt nicht am Laptop.<br><span class="thin">Sondern im Park.</span></h2>
+          <p>Eine Stunde draußen. Ich stelle Fragen, du erzählst. Wo du herkommst, wie du arbeitest, was dich nervt, wo du hinwillst. Wir nehmen alles auf. Daraus baut dein Agent sein Fundament: deine Stimme, deine Werte, deine Regeln.</p>
+        </div>
+        <article class="glass glass--dark w rec tilt">
+          <header class="w-head"><span><i class="dot"></i>REC</span><em>Park Session</em></header>
+          <div class="w-big timer"><b id="recTime">00:00</b><small>/ 60:00</small></div>
+          <div class="wave" aria-hidden="true"></div>
+          <footer class="w-foot left">Transkript wird zu deinem Soul Profil</footer>
+        </article>
+        <p class="park-note glass glass--pill">Deine Aufnahme gehört dir und bleibt auf deinem Rechner.</p>
+      </div>
+    </section>
+
+    <!-- 5 · BEWEISE -->
+    <section class="proof" id="beweise">
+      <div class="proof-pin">
+        <div class="sec-head proof-head">
+          <span class="eyebrow">Kein Theoretiker</span>
+          <h2>Ich zeige dir nur,<br><span class="thin">was bei mir selbst läuft.</span></h2>
+        </div>
+        <div class="ring-stage">
+          <div class="ring" id="ring"></div>
+        </div>
+        <div class="stats">
+          <div class="stat glass glass--pill"><b data-count="21">0</b><span>Agenten</span></div>
+          <div class="stat glass glass--pill"><b data-count="135">0</b><span>Skills</span></div>
+          <div class="stat glass glass--pill"><b data-count="45">0</b><span>Trigger</span></div>
+          <div class="stat glass glass--pill"><b data-count="69">0</b><span>Tools</span></div>
+          <div class="stat glass glass--pill"><b data-count="80" data-suffix="+">0</b><span>Projekte</span></div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="about-card glass glass--light">
+          <span class="eyebrow light">Wer dich führt</span>
+          <h3>Nader Ait-Laouad</h3>
+          <p>Berlin, marokkanische Wurzeln, Gründer der Produktionsfirma Shuto Crew. Commercials, Social Media, Musikvideos, unter anderem für BMW. Autodidakt in allem, vom Breakdance bis zur Chartanalyse. Heute laufen bei mir Agenten, die Videos produzieren, Kanäle steuern und Unterlagen sortieren, während ich drehe.</p>
+          <p class="quote">„KI ist ein Werkzeug, kein Ersatz für eigenes Denken. Wir lagern nicht das Denken aus. Wir lagern die Wiederholung aus.“</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5b · REFERENZEN -->
+    <section class="refs" id="referenzen">
+      <div class="sec-head">
+        <span class="eyebrow">Referenzen</span>
+        <h2>Was bei mir heute läuft.<br><span class="thin">Gebaut mit KI.</span></h2>
+        <p>Keine Mockups, keine Stockbilder. Echte Screens aus Projekten, die ich mit Claude Code gebaut habe. Genau so denkst du nach dem Workshop: in Systemen, nicht in Tools.</p>
+      </div>
+
+      <div class="ref-list">
+
+        <article class="ref glass glass--dark">
+          <div class="ref-copy">
+            <span class="eyebrow">01 · Content auf Autopilot</span>
+            <h3>Kurz &amp; Klar, News in 3D</h3>
+            <p>Ein News Kanal für TikTok und Instagram, den die KI selbst bespielt. Sie findet Themen, schreibt mit zwei Quellen und Faktencheck, vertont, baut die 3D Szene, rendert, plant die Posts und wertet die Zahlen aus. Ich gebe nur noch frei.</p>
+            <ul class="ref-facts">
+              <li><b>35</b><span>Videos in der Serie, 29 davon fertig gerendert</span></li>
+              <li><b>9</b><span>Schritte in der Pipeline, vom Themen Radar bis zur Auswertung</span></li>
+              <li><b>2×</b><span>Posts pro Tag auf beiden Kanälen, der Plan sortiert sich nach den Zahlen neu</span></li>
+              <li><b>95</b><span>Requisiten, 15 Figuren und 5 Welten im eigenen 3D Baukasten</span></li>
+            </ul>
+            <div class="ref-tags"><span>3D Szenen im Browser</span><span>KI Stimme</span><span>Untertitel per Whisper</span><span>läuft 07:45 und 20:45</span></div>
+          </div>
+          <div class="ref-shot">
+            <figure class="win"><div class="win-bar"><i></i><i></i><i></i><span>Kurz &amp; Klar Hub · Plan</span></div><img src="assets/img/refs/kk-plan.webp" alt="Kanal Hub mit Postingplan, zwei Slots pro Tag" loading="lazy" width="1200" height="750"></figure>
+            <figure class="win phone"><img src="assets/img/refs/kk-uhr.webp" alt="3D Erklärvideo zur Zeitumstellung" loading="lazy" width="360" height="640"></figure>
+            <figure class="win phone p2"><img src="assets/img/refs/kk-ki.webp" alt="3D Erklärvideo: Nimmt dir KI den Job?" loading="lazy" width="360" height="640"></figure>
+          </div>
+        </article>
+
+        <article class="ref glass glass--light">
+          <div class="ref-copy">
+            <span class="eyebrow">02 · Daten, die sich selbst aktualisieren</span>
+            <h3>Crypto Dashboard mit Widgets</h3>
+            <p>Mein Cockpit für den Kryptomarkt. Jeden Morgen um 07:30 und dreimal am Tag läuft die Datenkette von selbst: Kurse, Signale, Stimmung, Onchain Daten und ein tägliches Marktupdate Video. Danach gehen die öffentlichen Seiten automatisch online.</p>
+            <ul class="ref-facts">
+              <li><b>40</b><span>Seiten in 8 Bereichen in der Komplettfassung</span></li>
+              <li><b>48</b><span>Widgets in 7 Gruppen, frei anordnen und vergrößern</span></li>
+              <li><b>12+</b><span>Datenquellen, von Börsen Live Daten bis zu Nachrichten</span></li>
+              <li><b>4×</b><span>täglich aktualisiert und veröffentlicht, ohne Klick</span></li>
+            </ul>
+            <div class="ref-tags"><span>Live Kurse</span><span>Historie in eigener Datenbank</span><span>lokales KI Modell</span><span>Auto Deploy</span></div>
+            <div class="ref-links"><a class="btn btn--glass" href="https://nadercbz.github.io/crypto-vip-dashboard/" target="_blank" rel="noopener">VIP Dashboard</a><a class="btn btn--glass" href="https://nadercbz.github.io/markt-kompass/" target="_blank" rel="noopener">Markt Kompass</a></div>
+          </div>
+          <div class="ref-shot">
+            <figure class="win"><div class="win-bar"><i></i><i></i><i></i><span>Crypto Biz · Cockpit</span></div><img src="assets/img/refs/cd-widgets.webp" alt="Cockpit mit Marktampel, Lage und Kennzahlen als Widgets" loading="lazy" width="1200" height="750"></figure>
+            <figure class="win sub left"><div class="win-bar"><i></i><i></i><i></i><span>Symbolik</span></div><img src="assets/img/refs/cd-symbolik.webp" alt="Seite Symbolik: Top 5000 Coins nach Bildsprache" loading="lazy" width="900" height="562"></figure>
+          </div>
+        </article>
+
+        <article class="ref glass glass--dark">
+          <div class="ref-copy">
+            <span class="eyebrow">03 · Vom Moodboard bis zur Website</span>
+            <h3>Social Bites Konzept Fabrik</h3>
+            <p>Für meine Agentur Social Bites habe ich einen Builder gebaut, der aus einem Moodboard eine komplette Gastro Marke macht: Logo, Rezepte, Standort, Businessplan, Franchise Handbuch, 3D Visualisierung und eine eigene Website. Dazu ein internes Portal fürs Team mit Akquise, Planung, Produktion und Brand Book.</p>
+            <ul class="ref-facts">
+              <li><b>41</b><span>Steps in 8 Abschnitten, jeder einzeln freigegeben</span></li>
+              <li><b>8</b><span>Konzept Websites live, jede mit eigenem Look</span></li>
+              <li><b>36</b><span>Monate Businessplan als Excel, mit Break even</span></li>
+              <li><b>9</b><span>Bereiche im internen Portal, sensible Daten verschlüsselt</span></li>
+            </ul>
+            <div class="ref-links"><a class="btn btn--glass" href="https://nadercbz.github.io/nonna-turbo/" target="_blank" rel="noopener">Nonna Turbo</a><a class="btn btn--glass" href="https://nadercbz.github.io/don-doener/" target="_blank" rel="noopener">Don Döner</a><a class="btn btn--glass" href="https://nadercbz.github.io/bam-bird/" target="_blank" rel="noopener">Bam Bird</a><a class="btn btn--glass" href="https://nadercbz.github.io/pink-moss/" target="_blank" rel="noopener">Pink Moss</a></div>
+          </div>
+          <div class="ref-shot">
+            <figure class="win"><div class="win-bar"><i></i><i></i><i></i><span>Konzept Reihenfolge · 41 Steps</span></div><img src="assets/img/refs/sb-builder.webp" alt="Builder mit der festen Reihenfolge aus 41 Steps" loading="lazy" width="1200" height="750"></figure>
+            <figure class="win sub left"><div class="win-bar"><i></i><i></i><i></i><span>Das Büro</span></div><img src="assets/img/refs/sb-buero.webp" alt="Internes Büro mit Teams in acht Räumen" loading="lazy" width="900" height="562"></figure>
+            <figure class="win phone"><img src="assets/img/refs/sb-bambird.webp" alt="Website des Konzepts Bam Bird auf dem Handy" loading="lazy" width="360" height="760"></figure>
+            <figure class="win phone p2"><img src="assets/img/refs/sb-doener.webp" alt="Website des Konzepts Don Döner auf dem Handy" loading="lazy" width="360" height="760"></figure>
+          </div>
+        </article>
+
+        <article class="ref glass glass--light">
+          <div class="ref-copy">
+            <span class="eyebrow">04 · Spiele, ohne Studium</span>
+            <h3>Pray For Rain und Mystic</h3>
+            <p>Pray For Rain ist eine Welt Simulation: Völker gründen Dörfer, Städte und Staaten, treiben Handel, führen Kriege und deuten deine Zeichen als Mythen. Die Welt lebt weiter, auch wenn der Tab zu ist. Mystic ist ein Erkundungsspiel durch eine surreale Nachtstadt, gespeist aus meiner eigenen Wissensbasis.</p>
+            <ul class="ref-facts">
+              <li><b>19</b><span>Kräfte, 9 Staatsformen und 39 Techniken in Pray For Rain</span></li>
+              <li><b>1.500</b><span>Jahre Simulation, die nachgeholt wird, wenn du weg warst</span></li>
+              <li><b>95</b><span>Wissenssplitter in 5 Akten in Mystic</span></li>
+              <li><b>91</b><span>Code Module allein in Mystic</span></li>
+            </ul>
+            <div class="ref-links"><a class="btn btn--glass" href="https://nadercbz.github.io/pray-for-rain/" target="_blank" rel="noopener">Pray For Rain spielen</a></div>
+          </div>
+          <div class="ref-shot">
+            <figure class="win"><div class="win-bar"><i></i><i></i><i></i><span>Pray For Rain</span></div><img src="assets/img/refs/g-pfr.webp" alt="Pray For Rain: Stadt mit Feldern und Kräfte Karten" loading="lazy" width="1200" height="750"></figure>
+            <figure class="win sub"><div class="win-bar"><i></i><i></i><i></i><span>Mystic · ASNI</span></div><img src="assets/img/refs/g-asni.webp" alt="Mystic: Startbild ASNI, Planet über einer Wüste" loading="lazy" width="900" height="562"></figure>
+          </div>
+        </article>
+
+        <article class="ref glass glass--dark">
+          <div class="ref-copy">
+            <span class="eyebrow">05 · Wie weit man gehen kann</span>
+            <h3>Layer Zero, mein eigenes Betriebssystem</h3>
+            <p>Alles läuft in einem Browser OS im macOS Stil: Ordner, Dock, Spotlight, Widgets. Ein Klick startet jede App samt Server, auch unterwegs vom Handy. Dahinter arbeiten Agenten mit Gedächtnis und Aufgaben, die zu festen Zeiten von selbst starten.</p>
+            <ul class="ref-facts">
+              <li><b>77</b><span>Apps in einem System, 53 davon mit eigenem Server</span></li>
+              <li><b>66</b><span>Projekte in einem einzigen Workspace</span></li>
+              <li><b>16</b><span>Agenten mit festen Rollen und 16 Automationen nach Zeitplan</span></li>
+              <li><b>160</b><span>Einträge im Gedächtnis: der Agent weiß, wie ich arbeite</span></li>
+            </ul>
+            <div class="ref-tags"><span>Claude Code</span><span>Connectoren</span><span>Zeitpläne</span><span>Zugriff vom Handy</span></div>
+          </div>
+          <div class="ref-shot">
+            <figure class="win"><div class="win-bar"><i></i><i></i><i></i><span>Layer Zero</span></div><img src="assets/img/refs/lz.webp" alt="Layer Zero: Schreibtisch mit Ordnern, Widgets und Dock" loading="lazy" width="1200" height="750"></figure>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 6 · ANFRAGEN -->
+    <section class="apply" id="anfragen">
+      <div class="sec-head">
+        <span class="eyebrow">Zehn Plätze · Start So 15.11.2026</span>
+        <h2>Bewerbung statt Warenkorb.</h2>
+        <p>Ich will, dass jeder am Ende ein laufendes System hat. Deshalb kleine Gruppe und vorher ein kurzes Gespräch, ob es passt. Die ersten fünf Plätze gibt es zum Early Bird Preis.</p>
+      </div>
+
+      <div class="apply-grid">
+        <article class="glass glass--dark facts">
+          <div class="price-row">
+            <div class="price">
+              <span>Preis</span>
+              <b>2.600 €</b>
+              <small>netto · 3.094 € inkl. 19 % MwSt.</small>
+            </div>
+            <div class="price price--eb">
+              <span>Early Bird</span>
+              <b>2.300 €</b>
+              <small>netto · 2.737 € inkl. MwSt.<br>bis Mi 04.11.2026 oder für die ersten 5 Plätze</small>
+            </div>
+          </div>
+          <dl>
+            <div><dt>Start</dt><dd>So 15.11.2026</dd></div>
+            <div><dt>Termine</dt><dd>15.11. · 22.11. · 29.11. · 06.12.</dd></div>
+            <div><dt>Zeit</dt><dd>11:00 bis 14:30</dd></div>
+            <div><dt>Ort</dt><dd>Berlin, vor Ort</dd></div>
+            <div><dt>Gruppe</dt><dd>max. 10 Personen</dd></div>
+            <div><dt>Mitbringen</dt><dd>eigener Laptop, Mac oder Windows</dd></div>
+          </dl>
+          <div class="faq">
+            <details><summary>Muss ich programmieren können?</summary><p>Nein. Du sprichst mit deinem Agenten in normaler Sprache. Den Rest bauen wir zusammen.</p></details>
+            <details><summary>Welche Kosten kommen dazu?</summary><p>Ein Claude Abo (Pro oder Max). Alle anderen Werkzeuge im Workshop sind kostenlos. Die Workshop Gebühr zahlst du nach der Zusage per Rechnung.</p></details>
+            <details><summary>Was passiert mit meinen Daten?</summary><p>Alles bleibt auf deinem Rechner. Passwörter, Bankdaten und Ausweise tippt nur eine Person ein: du.</p></details>
+            <details><summary>Ist das Steuerberatung?</summary><p>Nein. Dein Agent bereitet vor und sortiert. Die Beratung bleibt bei deinem Steuerberater.</p></details>
+          </div>
+        </article>
+
+        <form class="glass glass--light apply-form" id="applyForm" novalidate>
+          <h3>Platz anfragen</h3>
+          <label><span>Dein Name</span><input name="name" autocomplete="name" required placeholder="Vor und Nachname"></label>
+          <label><span>Was machst du?</span><input name="job" required placeholder="z. B. Fotografin, selbstständig"></label>
+          <label><span>Was soll dein Agent dir abnehmen?</span><textarea name="wish" rows="3" required placeholder="z. B. E Mails, Angebote, Steuer Belege"></textarea></label>
+          <button class="btn btn--dark btn--lg" type="submit">Anfrage per Instagram senden</button>
+          <p class="form-note">Dein Text wird kopiert und Instagram öffnet sich bei @shutocrew. Einfach einfügen und senden.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <span>© 2026 Nader Ait-Laouad · Shuto Crew · Berlin</span>
+    <a href="https://instagram.com/shutocrew/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.shutocrew.de" target="_blank" rel="noopener">shutocrew.de</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="impressum.html#datenschutz">Datenschutz</a>
+  </footer>
+
+  <div class="toast glass glass--dark" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/lenis.min.js"></script>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

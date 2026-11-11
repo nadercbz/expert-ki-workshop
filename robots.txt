@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nadercbz.github.io/expert-ki-workshop/sitemap.xml
